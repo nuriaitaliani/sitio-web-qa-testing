@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio web de prueba para QA - Testing HTML, CSS y Git workflow"
+    />
+    <title>Sitio QA Testing - HTML, CSS, Git</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>QA Testing Site</h1>
+      <p class="subtitle">Pruebas integradas de HTML, CSS y Git</p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#features">Features</a>
+      <a href="#formulario">Contacto</a>
+      <a href="#about">Sobre Nosotros</a>
+    </nav>
+
+    <main>
+      <!-- Sección 1: Introducción -->
+
+      <section id="inicio">
+        <h2>Bienvenido a QA Testing</h2>
+
+        <p>
+          Este sitio web es un ejemplo práctico de testing integrado donde QA
+          valida HTML semántico, CSS responsive, y usa Git para colaboración
+          profesional.
+        </p>
+      </section>
+
+      <!-- Sección 2: Features -->
+
+      <section id="features">
+        <h2>Features Principales</h2>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>HTML Semántico</h3>
+            <p>
+              Estructura semántica correcta con etiquetas HTML5 apropiadas para
+              accesibilidad.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>CSS Responsive</h3>
+            <p>
+              Diseño responsive que adapta a móvil (320px), tablet (768px) y
+              desktop (1024px+).
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Git Workflow</h3>
+            <p>
+              Versionado en Git con branching strategy, PRs y code review para
+              QA.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Accesibilidad</h3>
+            <p>
+              Diseño accesible con contraste WCAG AA, focus indicators y
+              navegación keyboard.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Performance</h3>
+            <p>
+              CSS optimizado, sin código muerto, animaciones eficientes en GPU.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Compatibilidad</h3>
+            <p>
+              Testeado en Chrome, Firefox, Safari y Edge con prefijos vendor
+              donde necesario.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sección 3: Formulario -->
+
+      <section id="formulario">
+        <h2>Contacto</h2>
+
+        <form id="contact-form" method="POST" action="/api/contact" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre <span class="required">*</span></label>
+
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              minlength="3"
+              maxlength="50"
+              placeholder="Tu nombre completo"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="tu@ejemplo.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              maxlength="500"
+              placeholder="Tu mensaje..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </form>
+      </section>
+
+      <!-- Sección 4: About -->
+
+      <section id="about">
+        <h2>Sobre Este Proyecto</h2>
+        <p>
+          Este sitio web es un proyecto educativo para aprender testing QA
+          profesional. Incluye validación HTML, pruebas CSS, control de
+          versiones Git y colaboración mediante Pull Requests.
+        </p>
+
+        <h3>Tecnologías Usadas</h3>
+
+        <ul>
+          <li>HTML5 semántico</li>
+          <li>CSS3 responsive con media queries</li>
+          <li>JavaScript vanilla para validación</li>
+          <li>Git para control de versiones</li>
+          <li>GitHub para colaboración</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 QA Testing Site - Nuria. Proyecto educativo.</p>
+      <p>
+        <a
+          href="https://github.com/TU_USUARIO/sitio-web-qa-testing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver código en GitHub
+        </a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
