@@ -407,3 +407,14 @@ figcaption {
   margin-top: var(--spacing-sm);
   font-style: italic;
 }
+
+/* ========== AJUSTES DE ESPACIADO ========== */
+.features-grid {
+  gap: var(--spacing-md);
+}
+
+.btn {
+  min-height: 0;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
