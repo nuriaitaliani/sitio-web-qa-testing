@@ -418,3 +418,30 @@ figcaption {
   padding: 4px 10px;
   font-size: 0.75rem;
 }
+
+/* ========== MODO OSCURO ========== */
+:root {
+  --color-dark-bg: #1f2937;
+  --color-dark-text: #f3f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-dark-text);
+  }
+
+  nav a {
+    color: var(--color-dark-text);
+  }
+
+  input:focus,
+  textarea:focus,
+  button:focus {
+    outline-color: #60a5fa;
+  }
+
+  nav a:focus {
+    outline-color: #60a5fa;
+  }
+}
