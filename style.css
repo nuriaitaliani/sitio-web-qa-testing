@@ -434,4 +434,14 @@ figcaption {
   nav a {
     color: var(--color-dark-text);
   }
+
+  input:focus,
+  textarea:focus,
+  button:focus {
+    outline-color: #60a5fa;
+  }
+
+  nav a:focus {
+    outline-color: #60a5fa;
+  }
 }
